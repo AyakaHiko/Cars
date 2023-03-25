@@ -13,20 +13,14 @@ public abstract class Repository<T> : IRepository<T> where T : class, IEntity
         return await _set.ToListAsync();
     }
 
-    public virtual async Task<IEnumerable<T?>> GetDetails()
-    {
-        return await _set.ToListAsync();
-    }
+    public abstract Task<IEnumerable<T?>> GetDetails();
 
     public async Task<T?> Get(int id)
     {
         return await _set.FirstOrDefaultAsync(c => c!.Id == id);
     }
 
-    public virtual async Task<T?> GetDetails(int id)
-    {
-        return await _set.FirstOrDefaultAsync(c => c!.Id == id);
-    }
+    public abstract Task<T?> GetDetails(int id);
 
     public async Task<T?> Post(T entity)
     {

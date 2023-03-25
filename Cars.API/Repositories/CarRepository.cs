@@ -27,4 +27,21 @@ public class CarRepository : Repository<Car>
         }
         return entities;
     }
+
+    public override async Task<Car?> GetDetails(int id)
+    {
+        var entity = await _context.Cars
+            .FirstOrDefaultAsync(c => c.Id == id);
+
+        if (entity is null)
+        {
+            return null;
+        }
+
+        await _context.Manufacturers
+            .Where(c => c.Id == entity.ManufacturerId)
+            .LoadAsync();
+
+        return entity;
+    }
 }
