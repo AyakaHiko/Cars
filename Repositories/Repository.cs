@@ -5,7 +5,7 @@ namespace Repositories;
 
 public abstract class Repository<T> : IRepository<T> where T : class, IEntity
 {
-    protected DbSet<T?> _set;
+    protected DbSet<T> _set;
     protected abstract DbContext _context { get; }
 
         
@@ -27,7 +27,6 @@ public abstract class Repository<T> : IRepository<T> where T : class, IEntity
     {
         var added = await _set.AddAsync(entity);
         await _context.SaveChangesAsync();
-
         return added.Entity;
     }
 
