@@ -3,10 +3,10 @@ using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
 using Cars.API.AutoMapperProfiles;
 using Cars.API.Data.Entities;
-using Cars.API.Interfaces;
 using Cars.API.Repositories;
 using Cars.API.Services;
 using Cars.Shared.DTO;
+using Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 

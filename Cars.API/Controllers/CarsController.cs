@@ -8,8 +8,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Cars.API.Data;
 using Cars.API.Data.Entities;
-using Cars.API.Interfaces;
 using Cars.Shared.DTO;
+using Repositories;
 
 namespace Cars.API.Controllers
 {

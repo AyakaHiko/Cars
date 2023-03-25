@@ -77,7 +77,7 @@ public abstract class ServiceDto<TDto, TDtoDetails, TEntity> : IService<TDto, TD
             return null;
         }
 
-        var deletedCity = await _repository.Put(mappedEntity);
+        var deletedCity = await _repository.Delete(mappedEntity);
         var result = _mapper.Map<TDto>(deletedCity);
 
         return result;

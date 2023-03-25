@@ -1,7 +1,7 @@
 ﻿using Cars.API.Data;
 using Cars.API.Data.Entities;
-using Cars.API.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using Repositories;
 
 namespace Cars.API.Repositories;
 

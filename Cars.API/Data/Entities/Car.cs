@@ -1,4 +1,4 @@
-﻿using Cars.API.Interfaces;
+﻿using Repositories;
 
 namespace Cars.API.Data.Entities
 {

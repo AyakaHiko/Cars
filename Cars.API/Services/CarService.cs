@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Cars.API.Data.Entities;
-using Cars.API.Interfaces;
 using Cars.Shared.DTO;
+using Repositories;
 
 namespace Cars.API.Services;
 

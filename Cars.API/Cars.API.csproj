@@ -26,6 +26,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Cars.Shared\Cars.Shared.csproj" />
+    <ProjectReference Include="..\Repositories\Repositories.csproj" />
   </ItemGroup>
 
 </Project>
