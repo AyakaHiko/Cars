@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Cars.API.Data;
 using Cars.API.Data.Entities;
 using Cars.Shared.DTO;
-using Repositories;
+using Repositories.Interfaces;
 
 namespace Cars.API.Controllers
 {

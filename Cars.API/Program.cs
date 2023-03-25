@@ -6,7 +6,7 @@ using Cars.API.Data.Entities;
 using Cars.API.Repositories;
 using Cars.API.Services;
 using Cars.Shared.DTO;
-using Repositories;
+using Repositories.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 

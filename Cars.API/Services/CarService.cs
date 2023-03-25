@@ -2,6 +2,7 @@
 using Cars.API.Data.Entities;
 using Cars.Shared.DTO;
 using Repositories;
+using Repositories.Interfaces;
 
 namespace Cars.API.Services;
 

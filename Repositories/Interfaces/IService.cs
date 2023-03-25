@@ -1,7 +1,6 @@
-﻿
-namespace Repositories;
+﻿namespace Repositories.Interfaces;
 
-public interface IService<T,TD>
+public interface IService<T, TD>
 {
     Task<IEnumerable<T?>> Get();
     Task<IEnumerable<TD?>> GetDetails();

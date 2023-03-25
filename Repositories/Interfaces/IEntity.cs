@@ -1,5 +1,4 @@
-﻿
-namespace Repositories;
+﻿namespace Repositories.Interfaces;
 
 public interface IEntity
 {
